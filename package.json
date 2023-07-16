@@ -4,7 +4,7 @@
   "description": "能够对折叠的评论信息展示第一行文本信息",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.80.0"
   },
   "repository": {
     "url": "https://github.com/xuxchao/vscode-comment-tip"
@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/xuxchao/vscode-comment-tip/issues"
   },
+  "publisher": "yuechaoxu",
   "categories": [
     "Other"
   ],
