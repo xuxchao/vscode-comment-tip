@@ -1,6 +1,10 @@
 import * as vscode from "vscode";
 const decType = vscode.window.createTextEditorDecorationType({});
 export function activate(context: vscode.ExtensionContext) {
+  console.log(
+    'Congratulations, your extension "vscode-comment-tip" is now active!'
+  );
+
   let editorW = vscode.window.activeTextEditor;
   if (editorW) {
     addCommentDesDetail(editorW);
@@ -9,23 +13,8 @@ export function activate(context: vscode.ExtensionContext) {
     textEditor.setDecorations(decType, []);
     addCommentDesDetail(textEditor);
   });
-  console.log(
-    'Congratulations, your extension "vscode-comment-tip" is now active!'
-  );
-
-  let disposable = vscode.commands.registerCommand(
-    "vscode-comment-tip.helloWorld",
-    () => {
-      vscode.window.showInformationMessage(
-        "Hello World from vscode-comment-tip!"
-      );
-    }
-  );
-
-  context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}
 
 /** 根据可视范围获得折叠区域 */

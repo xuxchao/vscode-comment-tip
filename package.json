@@ -4,11 +4,23 @@
   "description": "能够对折叠的评论信息展示第一行文本信息",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.70.0"
+  },
+  "repository": {
+    "url": "https://github.com/xuxchao/vscode-comment-tip"
+  },
+  "bugs": {
+    "url": "https://github.com/xuxchao/vscode-comment-tip/issues"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "注释",
+    "comment",
+    "提效"
+  ],
+  "icon": "image/logo.png",
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:typescript",
@@ -20,12 +32,7 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "vscode-comment-tip.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "vscode:prepublish": "pnpm run package",
