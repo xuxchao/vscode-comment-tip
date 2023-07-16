@@ -2,7 +2,7 @@
   "name": "vscode-comment-tip",
   "displayName": "comment tip",
   "description": "能够对折叠的注释信息展示第一行的描述信息",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.80.0"
   },
