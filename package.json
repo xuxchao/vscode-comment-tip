@@ -9,7 +9,15 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:vue",
+    "onLanguage:react",
+    "onLanguage:angular",
+    "onLanguage:selvet",
+    "onLanguage:html"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
