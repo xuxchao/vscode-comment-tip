@@ -1,9 +1,7 @@
 import * as vscode from "vscode";
 const decType = vscode.window.createTextEditorDecorationType({});
 export function activate(context: vscode.ExtensionContext) {
-  console.log(
-    'Congratulations, your extension "vscode-comment-tip" is now active!'
-  );
+  console.log("扩展激活");
 
   let editorW = vscode.window.activeTextEditor;
   if (editorW) {
